@@ -1,0 +1,72 @@
+#main-top table{text-align: center;
+float: right;
+background-color: white;
+padding-right: 100px;
+width:1100px;
+padding-left: 100px;
+height: 38px;
+}
+#main-top{float: right;}
+.shangdian:hover{color: white;}
+#main-top table a{color: black;
+border:1px solid white;
+font-size: 1.2em;}
+#main-top table a.shangdian{color:#ff5400;}
+#main-top table a.shangdian:hover{color: white;}
+#main-top table a:hover{border:1px solid #ff5400;
+				background-color: #f40;
+				border-radius:13px;
+				}
+#menubar2 ul li ul li div{whith:720px;
+height: 520px;
+border:2px solid #F92A08;
+}
+	#box{ width:520px; height:280px; position:relative; overflow:hidden;float: left;
+		margin-top: -300px;}
+	#box ul{ position:absolute; left:0; top:0; 
+	}
+	#box ul li{ float:left; width:520px; height:280px;}
+	#box ul li img{ 
+		width: 520px;
+		height:280px;}
+
+		#box a{ transition:.2s all ease;}
+		#box .prev,#box .next{position:absolute;  top:50%; z-index:2; height:80px; line-height:80px; background:rgba(0,0,0,0.6); color:#fff; width:80px; text-align:center; margin-top:-40px; display:none;}
+		#box .prev{ left:0;}
+		#box .next{ right:0;}
+		#box a:hover{ background:rgba(255,0,0,0.4);}
+
+		#box ol{padding-left: 0; position:absolute; width:120px; left:50%; margin-left:-60px; bottom:10px; background-color: #95A0A0;border-radius:13px;border:1px solid #95A0A0;}
+		#box ol li{ width:20px; height:20px; background:#f60; float:left; margin:2px; text-align:center; text-indent:-9999px; border-radius:50%;}
+		#box ol li.active{ background:#fff;}
+.zhongjian{display: inline-block;
+clear: both;
+}
+#zhong-shang{margin-top: -50px;
+position: relative;top: 50px;}
+#denglu{background-color: white;
+width: 233px;
+height: 280px;
+}
+#zhong-you{float: right;
+margin-top: 9px;}
+.teshutd a{color: white; 
+text-decoration: none;}
+.teshutd:hover{background-color: #F22D00;}
+#dlxdheng{list-style: none;
+float: left;}
+.huidong{float: left;
+margin:0 6px;}
+
+.huidong table{
+width: 250px;
+position: absolute;
+top: 415px;
+right: 380px;
+text-align: righr;
+}
+.huidong:hover{border-bottom: 2px #FE742C solid;}
+.huidong:hover table{display: block; }
+div#zhong-xia {
+    position: relative;
+    top: 46px;}

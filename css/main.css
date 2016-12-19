@@ -1,0 +1,103 @@
+#main-max{clear: both;}
+#main-top table{text-align: center;
+background-color: white;
+padding-right: 100px;
+width:1100px;
+padding-left: 100px;
+height: 38px;
+}
+.shangdian:hover{color: white;}
+#main-top table a{color: black;
+border:1px solid white;
+font-size: 1.2em;}
+#main-top table a.shangdian{color:#ff5400;}
+#main-top table a.shangdian:hover{color: white;}
+#main-top table a:hover{border:1px solid #ff5400;
+				background-color: #f40;
+				border-radius:13px;
+				}
+#menubar2 ul li ul li div{whith:720px;
+height: 520px;
+border:2px solid #F92A08;
+}
+.zuofu{float: left;}
+#zhong{margin-right: 5px;}
+#box{ width:520px; height:280px; position:relative; overflow:hidden;margin-right: 5px;
+	}
+#box ul{ position:absolute; left:0; top:0; list-style: none; overflow: hidden;
+	padding-left: 0;
+	}
+#box ul li{ float:left; width:520px; height:280px;}
+#box ul li img{ 
+	width: 520px;
+	height:280px;}
+
+#box a{ transition:.2s all ease;}
+#box .prev,#box .next{position:absolute;  top:60%; z-index:2; height:40px;
+	 line-height:40px;
+ 	background:rgba(0,0,0,0.6); 
+	color:#fff; width:40px; text-align:center; margin-top:-40px; display:none;
+	font-size: 25px;}
+#box .prev{ left:0;}
+#box .next{ right:0;}
+#box a:hover{ background:rgba(255,0,0,0.4);}
+#box ol{padding: 0px; position:absolute; left:55%; margin-left:-60px; bottom:10px; background-color: rgba(255,255,255,.3);border-radius:13px;border:1px solid #95A0A0;}
+#box ol li{ width:10px; height:10px; background:#B7B7B7; float:left; margin:2px; text-align:center; text-indent:-9999px; border-radius:50%;}
+#box ol li.active{ background:#F40;}
+ 
+#you{margin-left: 5px;}
+#denglu{background-color: white;
+width: 233px;
+height: 310px;
+}
+.teshutd a{color: white; 
+text-decoration: none;}
+.teshutd:hover{background-color: #F22D00;}
+#dlxdheng{list-style: none;
+float: left;
+padding-left: 0;}
+.huidong{float: left;
+margin:0 8px;}
+.huidong table{
+	text-align:center;
+position:absolute;
+top:460px;
+right: 417px;}
+.tianmao{background-image: url(../image/xiaotianmao.gif);
+padding-left: 50px;
+background-repeat:no-repeat;}
+#tubiao table{width: 233px;}
+#tubiao td{background-color: white;
+text-align: center;
+border-spacing: 0px;
+
+}
+#tubiao table{background-color: white;
+border-spacing:0px; }
+#chongfei{background-image: url(../image/chongfei.png);
+padding: 45px 0 0 0;
+background-repeat: no-repeat;
+width: 53px;
+}
+#youxi{background-image: url(../image/youxi.png);
+	padding: 45px 0 0 0;
+background-repeat: no-repeat;
+width: 54px;}
+#lvyou{background-image: url(../image/lvyou.png);
+	padding: 45px 0 0 0;
+background-repeat: no-repeat;
+width: 54px;}
+#chexian{background-image: url(../image/chexian.png);
+	padding: 45px 0 0 0;
+background-repeat: no-repeat;
+width: 54px;}
+#guanggao td{border: 1px white solid;
+				padding: 0px;
+				border-spacing: 0px;
+				border-collapse:collapse; }
+#guanggao td:hover{border-color: #FC673D;}
+#main-middle{clear: both;
+width: 1100px;
+margin-left: auto;
+margin-right: auto;
+}
