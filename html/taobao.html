@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../css/dier.css">
+	<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/shucaidan.css">
+	<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/xiabufen.css">
+	<meta charset="UTF-8">
+	<title>淘宝网 - 淘！我喜欢</title>
+	<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script><script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+	var i,p,v,obj,args=MM_showHideLayers.arguments;
+	for (i=0; i<(args.length-2); i+=3) 
+		with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+			if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+			obj.visibility=v; }
+		}
+	</script>
+</script>
+<script>
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var oPrev=oBox.children[0];
+		var oNext=oBox.children[1];
+		var oUl=oBox.getElementsByTagName('ul')[0];
+		var aLi=oUl.children;
+		var oOl=oBox.getElementsByTagName('ol')[0];
+		var aBtn=oOl.children;
+
+//先复制一份
+oUl.innerHTML+=oUl.innerHTML;
+//算宽度
+oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';
+
+var W=oUl.offsetWidth/2;
+
+//移入显示俩按钮
+oBox.onmouseover=function(){
+	clearInterval(timer);
+	oPrev.style.display='block';
+	oNext.style.display='block';    
+}
+oBox.onmouseout=function(){
+	timer=setInterval(function(){
+		iNow--;
+		tab();
+	},2000);
+	oPrev.style.display='none';
+	oNext.style.display='none';    
+}
+//覆模循环一一对应。
+var iNow=0;
+
+//选项卡
+for(var i=0; i<aBtn.length; i++){
+	(function(index){
+		aBtn[i].onclick=function(){
+
+if(index==0 && iNow%aBtn.length==aBtn.length-1){//循环一圈后，index=0；iNow%aBtn.length=最后一张图片的时候。iNow都处于
+//++;
+iNow++;    
+}
+if(index==aBtn.length-1 && iNow%aBtn.length==0){//循环一圈后，index=最后一个下标；iNow%aBtn.length=第一张图片的时候。iNow都处于
+//--;
+iNow--;    
+}
+
+if(iNow>0){
+iNow=Math.floor(iNow/aBtn.length)*aBtn.length+index;//Math.floor(iNow/aBtn.length)*aBtn.length  和newMove 对应起来，只要开始动就得走一屏幕。对应的按钮也在对应着变化。
+}else{
+	if(index==0 && iNow%aBtn.length==-1){
+		iNow++;    
+	}
+	iNow=Math.floor(iNow/aBtn.length)*aBtn.length+index;    
+}
+tab();
+document.title=iNow;
+}
+})(i);
+}
+
+function tab(){
+	for(var i=0; i<aBtn.length; i++){
+		aBtn[i].className='';
+	}
+	if(iNow<0){
+		aBtn[(iNow%aBtn.length+aBtn.length)%aBtn.length].className='active';
+	}else{
+		aBtn[iNow%aBtn.length].className='active';    
+	}
+//oUl.style.left=-iNow*aLi[0].offsetWidth+'px';    
+console.log(iNow)
+startMove(oUl,-iNow*aLi[0].offsetWidth);
+}
+
+//点击
+oNext.onclick=function(){
+	iNow++;
+	tab();
+
+}    
+var timer=null;
+timer=setInterval(function(){
+	iNow--;
+	tab();
+},2000);
+
+oPrev.onclick=function(){
+	iNow--;
+	tab();
+
+}
+var left=0;
+function startMove(obj,iTarget){
+	clearInterval(obj.timer);
+	obj.timer=setInterval(function(){
+var iSpeed=(iTarget-left)/8;//  总的距离/8得到速度。
+//判断speed 正负，来取舍不同的值，不能为小数，每次都要求走一个li宽度。
+iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+
+if(left==iTarget){//判断l=iTaegrt要关闭定时器
+	clearInterval(obj.timer);
+}else{
+	left+=iSpeed;
+	if(left<0){
+		obj.style.left=left%W+'px';
+	}else{
+		obj.style.left=(left%W-W)%W+'px';    
+	}
+}
+
+},30);
+}
+}
+</script>
+</head>
+<body onload="MM_showHideLayers('first','','show','span1','','show','span2','','hide','span3','','hide','second','','show','span4','','hide');MM_showHideLayers('gonggao','','hide','luntan','','hide','guize','','hide','anquan','','show')">
+	<div id="header-left">
+		<span><a href="#">亲，请登录</a></span>
+		<span><a href="">免费注册</a></span>
+		<span><a href="">手机逛淘宝</a></span>
+	</div>
+	<div id="header-right">    
+		<ul id="MenuBar1" class="MenuBarHorizontal">
+			<li><a href="#" title="我的淘宝" class="MenuBarItemSubmenu">我的淘宝</a>
+				<ul>
+					<li><a href="#">已买到的宝贝</a></li>
+					<li><a href="#">我的足迹</a></li>
+				</ul>
+			</li>
+			<li><a href="#">购物车</a></li>
+			<li><a class="MenuBarItemSubmenu" href="#">收藏夹</a>
+				<ul>
+					<li><a href="#">收藏的宝贝</a></li>
+					<li><a href="#">收藏的店铺</a></li>
+				</ul>
+			</li>
+			<li><a href="#">商品分类</a></li>
+			<li><a href="#" class="MenuBarItemSubmenu">卖家中心</a>
+				<ul>
+					<li><a href="#">免费开店</a></li>
+					<li><a href="#">已卖出的宝贝</a></li>
+					<li><a href="#">出售中的宝贝</a></li>
+					<li><a href="#">卖家服务市场</a></li>
+					<li><a href="#">卖家培训中心</a></li>
+					<li><a href="#">体检中心</a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">联系客服</a>
+				<ul>
+					<li><a href="#">消费者客服</a></li>
+					<li><a href="#">卖家客服</a></li>
+				</ul>
+			</li>
+		</ul> 
+	</div>
+	<script type="text/javascript">
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+	</script>
+	<div id="search">
+		<img src="../image/taobaologo.jpg" alt="">
+		<div id="search-1">
+			<div id="search-2">
+				<div id="first"><span class="tspan" id="span1">宝贝</span><span id="span2">天猫</span><span id="span3">店铺</span>
+				</div>
+				<div id="second"><span id="span4" onClick="MM_showHideLayers('span1','','show','span2','','hide','span3','','hide','span4','','hide','span5','','show','span6','','show')"><a href="#"  class="searchcolor">宝贝</a></span>
+					<span id="span5" onClick="MM_showHideLayers('span1','','hide','span2','','show','span3','','hide','span4','','show','span5','','hide','span6','','show')"><a href="#" class="searchcolor">天猫</a></span>
+					<span id="span6" onClick="MM_showHideLayers('span1','','hide','span2','','hide','span3','','show','span4','','show','span5','','show','span6','','hide')"><a href="#" class="searchcolor">店铺</a></span>
+				</div>
+			</div>
+			<div id="search-3">
+				<form action="">
+					<label for="search-4"></label>
+					<input type="text" name="search-4" id="search-4">
+					<input type="submit" name="searc-3" id="search-5" value="搜索">
+					<label for="search-3"></label>
+				</form>
+			</div>
+			<span id="lianjie"><a href="#" class="searchcolor">四件套</a>&nbsp;
+				<a href="#">羽绒服</a>&nbsp;
+				<a href="#">枕头</a>&nbsp;
+				<a href="#">枕芯</a>&nbsp; 
+				<a href="#" class="searchcolor">棉服</a>&nbsp;
+				<a href="#">毛衣</a>&nbsp;
+				<a href="#" class="searchcolor">女士羽绒服</a>&nbsp;
+				<a href="#">毛呢外套</a>&nbsp;
+				<a href="#">男士羽绒服</a>&nbsp;
+				<a href="#" class="searchcolor">男鞋</a>&nbsp;
+				<a href="#">女士棉衣</a>
+				<a href="#">更多➤</a>
+			</span>
+
+		</div>
+	</div>
+</div>
+<div id="main-max">
+	<div id="main-top">
+		<table width="800">
+			<tr>
+				<td><a href="#"  class="shangdian">天猫</a></td>
+				<td><a href="#"  class="shangdian">聚划算</a></td>
+				<td><a href="#"  class="shangdian">天猫超市</a></td>
+				<td>|</td>
+				<td><a href="#">淘抢购</a></td>
+				<td><a href="#">电器城</a></td>
+				<td><a href="#">司法拍卖</a></td>
+				<td><a href="#">中国制造</a></td>
+				<td><a href="#">特色中国</a></td>
+				<td>|</td>
+				<td><a href="#">飞猪旅行</a></td>
+				<td><a href="#">智能生活</a></td>
+				<td><a href="#">苏宁易购</a></td>
+			</tr>
+		</table>
+	</div>
+	<div id="zuo" class="zuofu">
+		<ul id="MenuBar2" class="MenuBarVertical">
+			<li><a class="MenuBarItemSubmenu" href="#">女装 /男装 / 内衣</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210103440.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">鞋靴 / 箱包 / 配件</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210112233.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">童装玩具 / 孕产 / 用</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210104435.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">家电 / 数码 / 手机</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210104553.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">美妆 / 洗护 / 保健品</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210104705.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">珠宝 / 眼镜 / 手表</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210104854.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">运动 / 户外 / 乐器</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210104947.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">游戏 / 动漫 / 影视</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210105037.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">美食 / 生鲜 / 零食</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210105131.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a class="MenuBarItemSubmenu" href="#">鲜花 / 宠物 / 农资</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210105235.png" width="696" height="467"></a>            </li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">房产 / 装修 / 建材</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210105341.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">家具 / 家饰 / 家纺</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210105432.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+			<li><a href="#" class="MenuBarItemSubmenu">办公 /DIY/五金电</a>
+				<ul>
+					<li><a href="#"><img src="../image/QQ截图20161210105508.png" width="696" height="467"></a></li>
+				</ul>
+			</li>
+		</ul>
+		<img src="../image/QQ截图20161212082024.png" width="167" height="41"> 
+	</div>
+	<div id="zhong" class="zuofu">
+		<div id="zhong-shang">    <script type="text/javascript">var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});</script>  
+			<div id="box" class="zuofu"> 
+				<a href="javascript:;" class="prev">《</a>
+				<a href="javascript:;" class="next">》</a>
+				<ul>
+					<li><img src="../image/lunboyoyi.jpg"></li>
+					<li><img src="../image/lunboer.jpg"></li>
+					<li><img src="../image/lunbosan.jpg"></li>
+					<li><img src="../image/lunbosi.jpg"></li>
+					<li><img src="../image/lunbowu.jpg"></li>
+				</ul>
+				<ol>
+					<li class="active">０</li>
+					<li>１</li>
+					<li>２</li>
+					<li>３</li>
+					<li>４</li>
+				</ol>
+			</div><img src="../image/guanggao1.png" alt="">
+		</div>
+		<div id="zhong-xia">
+			<div><span class="tianmao">天猫必逛</span><span>热门品牌</span>
+			</div>
+		</div>
+		<div>
+			<table id="guanggao">
+				<tr>
+					<td><a href="#"><img src="../image/TB13PqeIVXXXXaHapXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+					<td><a href="#"><img src="../image/TB10a_PHpXXXXbqXFXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+					<td><img src="../image/TB1nk.XJVXXXXX0XFXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></td>
+					<td rowspan="4" class="guanggao"><a href="#"><img src="../image/TB27xIRX3NlpuFjy0FfXXX3CpXa_!!147-2-yamato.png_200x200q90.jpg" width="130" height="200"></a></td>
+					<td rowspan="4" class="guanggao"><a href="#"><img src="../image/TB24EWVXrBmpuFjSZFuXXaG_XXa_!!186-2-yamato.png_200x200q90.jpg" width="130" height="200"></a></td>
+					<td rowspan="4" class="guanggao"><a href="#"><img src="../image/TB2tUGOXS0jpuFjy0FlXXc0bpXa_!!88-2-yamato.png_200x200q90.jpg" width="130" height="200"></a></td>
+					<tr>
+						<td><a href="#"><img src="../image/TB1Xi1EOpXXXXbMapXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+						<td><a href="#"><img src="../image/TB1Mm1JJpXXXXcZXVXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+						<td><a href="#"><img src="../image/TB1PhHOKXXXXXccXFXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+					</tr>
+					<tr>
+						<td><a href="#"><img src="../image/TB1kT.XHpXXXXXrXXXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+						<td><a href="#"><img src="../image/TB1bKIvJVXXXXaJXVXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+						<td><a href="#"><img src="../image/lunboguanggao1.jpg_90x90q90.jpg" width="90" height="45"></td>
+					</tr>
+					<tr>
+						<td><a href="#"><img src="../image/TB178.CHpXXXXbTapXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+						<td><a href="#"><img src="../image/TB1TPLrIFXXXXc9XVXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+						<td><a href="#"><img src="../image/TB1aX3uIVXXXXc_XFXXSutbFXXX.jpg_90x90q90.jpg" width="90" height="45"></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="you" class="zuofu">
+			<div id="denglu">
+				<table width="232" height="159">
+					<tr>
+						<td height="91" colspan="3" align="center"><p><a><img src="../image/denglu.png" width="64" height="64"></a></p>
+							<p>Hi!你好</p>
+						</td>
+					</tr>
+					<tr align="center" valign="middle">
+						<td height="27" colspan="3" ><a data-spm="d3" href="https://taojinbi.taobao.com/index.htm?auto_take=true"><img src="../image/QQ截图20161209112611.png" align="center" width="25" height="25">领淘金币抵钱</a>或去<a href="https://vip.taobao.com/">会员俱乐部</a>
+						</td>
+					</tr>
+					<tr align="center" bgcolor="#FF4400">
+						<td class="teshutd" width="72" height="31" ><a href="#">登陆</a></td>
+						<td class="teshutd" width="78"><a href="#">注册</a></td>
+						<td class="teshutd" width="66"><a href="#">开店</a></td>
+					</tr>
+				</table>
+				<div id="dengluxia" >
+					<ul id="dlxdheng">
+						<li class="huidong" onMouseMove="MM_showHideLayers('gonggao','','show','luntan','','hide','guize','','hide','anquan','','hide')"><a href="#">公告</a>
+							<table id="gonggao">
+								<tr>
+									<td><a href="#">闲鱼公益上线</a></td>
+									<td><a href="#">阿里出助残政策</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">双12“亲亲节”</a></td>
+									<td><a href="#">闲鱼年底增员</a></td>
+								</tr>
+							</table>
+						</li>
+						<li class="huidong" onMouseMove="MM_showHideLayers('gonggao','','hide','luntan','','show','guize','','hide','anquan','','hide')"><a href="#">论坛</a>
+							<table id="luntan">
+								<tr>
+									<td><a href="#">正当谋利规则</a></td>
+									<td><a href="#">店铺规则调整</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">亲宝贝管理规范</a></td>
+									<td><a href="#">淘宝价格规范</a></td>
+								</tr>
+							</table> 
+						</li>
+						<li class="huidong" onMouseMove="MM_showHideLayers('gonggao','','hide','luntan','','hide','guize','','show','anquan','','hide')"><a href="#">规则</a>
+							<table id="guize">
+								<tr>
+									<td><a href="#">双十二报名啦！</a></td>
+									<td><a href="#">招募志愿者</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">名师一刻讲坛</a></td>
+									<td><a href="#">十八纸颠覆原始</a></td>
+								</tr>
+							</table>
+						</li>
+						<li class="huidong" onMouseMove="MM_showHideLayers('gonggao','','hide','luntan','','hide','guize','','hide','anquan','','show')"><a href="#">安全</a>
+							<table id="anquan">
+								<tr>
+									<td><a href="#">差点我都信了！</a></td>
+									<td><a href="#">重交“保证金”？</a></td>
+								</tr>
+								<tr>
+									<td><a href="#">半路货被劫了！</a></td>
+									<td><a href="#">许多卖家收到了</a></td>
+								</tr>
+							</table>
+						</li>
+						<li class="huidong"><a href="#">公益</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div bgcolor="white";>
+				<table id="tubiao">
+					<tr>
+						<td id="chongfei">充话费</td>
+						<td id="youxi">游戏</td>
+						<td id="lvyou">旅游</td>
+						<td id="chexian">车险</td>
+					</tr>
+					<tr>
+						<td colspan="4"><img src="../image/QQ截图20161212112900.png" width="227" height="140"></td>
+					</tr>
+				</table> 
+			</div>	
+		</div>
+	</div><!--这里原来有东西-->
+	<div id="main-middle">
+		<div id="middle-left">
+			<div class="like J_Like" data-len="4" data-open="1"> 
+				<div class="like-bd" style="height:744px;"> 
+					<div data-mid="1012" class="like-itemlike-info like-0" data-spm-ab="item-1012">
+						<div class="fi-sidebar" data-spm-ab="item-1012-links">
+							<a href="#" class="fi-logo" style="background-color:#406cc0;"><em>潮电街</em><img src="../image/suibian.jpg"></a>
+							<div class="fi-links" style="background-color:#459ac4;"> <strong>热门TOP</strong> <div>
+								<a href="#">iPhone 7</a>
+								<a href="#">看片神器</a>
+								<a href="#">自拍杆</a>
+								<a href="#">智能投影仪</a>
+								<a href="#">智能手环</a>
+								<a href="#">智能手表</a>
+								<a href="2#">智能路由器</a>
+								<a href="2#">智能机器人</a>
+								<a href="#">制氧机</a>
+								<a href="#">榨汁机</a>
+								<a href="#">运动耳机</a>
+								<a href="#">游戏手柄</a>
+								<a href="#">饮水机</a>
+								<a href="">音响</a>
+								<a href="#">移动硬盘</a>
+								<a href="#">一加3</a>
+								<a href="">牙刷</a>
+								<a href="#">宿舍神器</a>
+								<a href="#">小米5</a>
+								<a href="">小米</a>
+								<a href="#">显示器</a>
+								<a href="2#">吸黑头神器</a>
+								<a href="#">微波炉</a>
+								<a href="2#">剃须刀电动</a>
+								<a href="#">剃须刀</a>
+								<a href="#">体重秤</a>
+								<a href="#">体感游戏</a>
+								<a href="#">酸奶机</a>
+								<a href="#">鼠标垫</a>
+								<a href="">鼠标</a>
+								<a href="#">手机支架</a>
+								<a href="#">手机壳</a>
+								<a href="">手机</a>
+								<a href="">手表</a>
+								<a href="2#">扫地机器人</a>
+								<a href="#">三星s7</a>
+								<a href="">三星</a>
+								<a href="#">荣耀8</a>
+								<a href="12#">去甲醛净化器</a>
+								<a href="12#">苹果6手机壳</a>
+								<a href="2e7212#">苹果6plus手机壳</a>
+								<a href="#">苹果6</a>
+								<a href="">苹果</a>
+								<a href="#">平衡车</a>
+								<a href="#">平板电脑</a>
+								<a href="#">拍立得</a>
+								<a href="#">内存卡</a>
+								<a href="#">魅族</a>
+								<a href="#">美颜相机</a>
+								<a href="#">美图手机</a>
+								<a href="#">乐视手机</a>
+								<a href="#">乐视</a>
+								<a href="#">老年手机</a>
+								<a href="#">蓝牙音箱</a>
+								<a href="#">蓝牙耳机</a>
+								<a href="#">空调扇</a>
+								<a href="#">空调</a>
+								<a href="#">空气加湿器</a>
+								<a href="2#">可爱充电宝</a>
+								<a href="#">烤箱家用</a>
+								<a href="#">烤箱</a>
+								<a href="#">卷发棒</a>
+								<a href="#">净水器</a>
+								<a href="#">键盘</a>
+								<a href="#">家用制氧机</a>
+								<a href="#">机械键盘</a>
+								<a href="#">华为手机</a>
+								<a href="">华为</a>
+								<a href="#">固态硬盘</a>
+								<a href="#">钢化膜</a>
+								<a href="#">飞机杯</a>
+								<a href="#">饭盒</a>
+								<a href="#">耳机入耳式</a>
+								<a href="#">耳机</a>
+								<a href="#">儿童手表</a>
+								<a href="#">豆浆机</a>
+								<a href="#">电子书</a>
+								<a href="#">电子称</a>
+								<a href="#">电热水壶</a>
+								<a href="#">电脑主机</a>
+								<a href="#">电火锅</a>
+								<a href="#">电风扇</a>
+								<a href="#">电饭煲</a>
+								<a href="#">电动牙刷</a>
+								<a href="#">电磁炉</a>
+								<a href="#">吹风机</a>
+								<a href="#">充电宝</a>
+								<a href="#">车载手机支架</a>
+								<a href="2#">车载充电器</a>
+								<a href="#">笔记本</a>
+								<a href="#">按摩器</a>
+								<a href="#">vsco滤镜 全滤镜</a>
+								<a href="#">VR眼镜</a>
+								<a href="#">vivo</a>
+								<a href="#">u盘</a>
+								<a href="#">oppo</a>
+								<a href="#">mp3</a>
+								<a href="#">iphone6</a>
+								<a href="#">ipad</a>
+								<a href="#">3D打印机</a>
+								<a href="#">智能电子秤</a>
+							</div> 
+						</div> 
+					</div> 
+					<div class="fi-contain"> 
+						<s style="border-color:#406cc0" class="fic-top">
+						</s>
+						<s style="border-color:#406cc0" class="fic-right"></s>
+						<s style="border-color:#406cc0" class="fic-bottom"></s> 
+						<div class="fi-cup">
+							<a href="#" class="fi-banner-s fi-banner-s-0 fi-fl"><img src="../image/TB1z9EyOFXXXXaqXVXXXXXXXXXX-200-402.jpg_100x1000q90.jpg"></a>
+							<a href="#" class="fi-banner-s fi-banner-s-1 fi-fl"><img src="../image/TB1uBcBOFXXXXbWXFXXXXXXXXXX-200-402.jpg_100x1000q90.jpg_.webp.jpg" width="100" height="201"></a>
+							<div class="fi-fl fi-cwrap-d fi-per">
+								<a href="#"> <span><img src="../image/dianbao.jpg_.webp.jpg" width="80" height="80"></span> <strong>今有潮电</strong> <em>等你来看</em> </a>
+								<a href="#"> <span><img src="../image/TB1TjQAOpXXXXbKaXXXXXXXXXXX-150-150.jpg_80x80q90.jpg_.webp.jpg" width="80" height="80"></span> <strong>首发预约</strong>  
+									<em>抢先有奖</em>
+								</a>
+							</div>
+						</div> 
+						<div class="fi-cdown">
+							<a href="#" class="fi-banner-l fi-fl fi-detail"> <img src="../image/TB1tzM_OpXXXXaCXpXXXXXXXXXX-360-280.jpg_180x180q90.jpg_.webp.jpg" width="180" height="140"> <span><em style="background: #459ac4">热门</em><i>外星人耳机</i><strong>外观独特 整机重量仅6g 来电报姓名
+								人机对讲 智能语音控制</strong></span> </a>
+								<div class="fi-fl fi-dwrap-c">
+									<a href="#"> <img src="../image/TB1sQc9OpXXXXbJXpXXXXXXXXXX-240-130.jpg_120x120q90.jpg_.webp.jpg" width="120" height="65"> <span>智能音乐口罩</span> </a>
+									<a href="#"><img src="../image/TB1E.sNOpXXXXctXVXXXXXXXXXX-240-130.jpg_120x120q90.jpg_.webp.jpg" width="120" height="65"><span>冬天不怕冷</span> </a> </div> </div>
+								</div>
+								<img src="../image/QQ截图20161216190441.png" alt="">  <img src="../image/QQ截图20161216190455.png" alt=""><img src="../image/QQ截图20161216190407.png" alt="">
+							</div> 
+						</div>	
+										
+					</div> 
+				</div>
+				
+				<div id="middle-right">
+				  	<div>
+				  		<table>
+				  			<tr>
+				  				<td colspan="2"><img src="../image/QQ截图20161220152329.png" style=" width: 203px;""></td>
+				  			</tr>
+				  			<tr>
+				  				<td><img src="../image/TB2JyrMbCOI.eBjy1zkXXadxFXa_!!17358122.jpg"></td>
+				  				<td>[E4652]笑涵阁 <p>这个颜色很百搭</p></td>
+				  			</tr>
+				  			<tr>
+				  				<td><img src="../image/TB2YtwoXWnyQeBjSsphXXXiuVXa_!!48941084.jpg"></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td><img src="../image/TB2ERzqspXXXXXrXXXXXXXXXXXX_!!64265083.jpg"></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td><img src="../image/TB1wAMoIXXXXXcHXVXXXXXXXXXX_!!0-item_pic.jpg"></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td><img src="../image/TB2RzrMkpXXXXbRXXXXXXXXXXXX_!!1883464482.jpg"></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td><img src="../image/TB2KqijjFXXXXXmXpXXXXXXXXXX_!!2259966404.jpg"></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td></td>
+				  				<td></td>
+				  			</tr>
+				  			<tr>
+				  				<td></td>
+				  				<td></td>
+				  			</tr>
+				  		</table>
+				  	</div>
+				</div>
+			</div>
+		</body>
+		</html> 

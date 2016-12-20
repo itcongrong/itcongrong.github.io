@@ -3,4 +3,8 @@ width: 1100px;
 margin-left: auto;
 margin-right: auto;
 }
-#middle-left,#middle-right{float: left;}
+#middle-left{float: left;
+width:885px;}
+#middle-right{float: left;}
+#middle-right table{background-color: white;}
+#milddle-right table td:hover{color: #FC7C0C;}
