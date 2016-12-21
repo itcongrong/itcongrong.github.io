@@ -6,5 +6,8 @@ margin-right: auto;
 #middle-left{float: left;
 width:885px;}
 #middle-right{float: left;}
-#middle-right table{background-color: white;}
-#milddle-right table td:hover{color: #FC7C0C;}
+#middle-right table{background-color: white;
+width: 215px;}
+#youhaohuo table td:hover {color: #FC7C0C;}
+#youhaohuo table td p:nth-child(1){font-size: 0.5em;}
+#youhaohuo table td p:nth-child(2){color: #7C71F5;}
