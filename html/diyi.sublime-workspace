@@ -4,8 +4,44 @@
 		"selected_items":
 		[
 			[
+				"xiao",
+				"xiaotd"
+			],
+			[
+				"flow",
+				"overflow"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
 				"margin",
-				"margin-top"
+				"margin"
+			],
+			[
+				"hei",
+				"line-height"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"border",
+				"border\tAttr"
 			],
 			[
 				"z",
@@ -22,10 +58,6 @@
 			[
 				"texta",
 				"text-align"
-			],
-			[
-				"border",
-				"border-width"
 			],
 			[
 				"c",
@@ -144,10 +176,6 @@
 				"repeat-x"
 			],
 			[
-				"backg",
-				"background-image"
-			],
-			[
 				"blo",
 				"inline-block"
 			],
@@ -260,13 +288,20 @@
 	"buffers":
 	[
 		{
-			"contents": "",
-			"file": "diyi.sublime-project",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "taobao.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 25386,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/I/从 容/.github.io/css/xiabufen.css",
+			"settings":
+			{
+				"buffer_size": 749,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -313,8 +348,19 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/I/从 容/.github.io",
+		"/I/从 容/.github.io/css",
+		"/I/从 容/.github.io/html",
+		"/I/从 容/.github.io/html/SpryAssets",
+		"/I/从 容/.github.io/image"
+	],
 	"file_history":
 	[
+		"/I/从 容/.github.io/image/TB2JyrMbCOI.eBjy1zkXXadxFXa_!!17358122.jpg",
+		"/I/从 容/.github.io/css/dier.css",
+		"/I/从 容/.github.io/html/diyi.sublime-project",
 		"/D/从容/div+css/html/练习.html",
 		"/D/从容/div+css/css/exercise1.css",
 		"/D/从容/div+css/html/导航条.html",
@@ -351,7 +397,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -365,6 +411,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"png",
 			"70",
 			"35",
 			"300px",
@@ -400,29 +447,60 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "diyi.sublime-project",
+					"file": "taobao.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 25386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								23055,
+								23055
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9912.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/I/从 容/.github.io/css/xiabufen.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -436,7 +514,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -473,7 +551,7 @@
 	"project": "diyi.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -511,7 +589,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 268.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

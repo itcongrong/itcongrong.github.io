@@ -9,8 +9,8 @@ margin-right: auto;}
 background-color: #EEEEEE;
 line-height: 37px;
 width:30%;
-padding-left: 20%;}
-#header-right{float: right;width: 50%;
+padding-left: 10%;}
+#header-right{float:left;width:60%;
 	background-color: #EEEEEE;
 }
 #header-left a{color:black;
@@ -21,7 +21,7 @@ margin-right: 30px;
 #MenuBar1 li ul li{background-color: white;}
 #search{background-color: #FFF;
     padding-top: 30px;
-    padding-left: 400px;
+    padding-left: 10%;
     clear: both;
     height: 100px;
     }
