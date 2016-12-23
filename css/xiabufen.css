@@ -21,10 +21,32 @@ line-height: 35px;
 margin: 0px;
 }
 #shishang table td span{position: relative;
-top: -8px;
+top: 0px;
 background-color: white;
-padding-left: 30px;
-padding-right: 30px;
+padding-left: 20px;
+padding-right: 20px;
 padding-top: 5px;}
-.xiaotd{width: 120px;
+#shishang table{width: 218px;
+}
+.xiaotd{width: 100px;
 overflow: hidden;}
+#shishang table:hover{border-color: #FD5505;}
+#shishang table td span:hover{color: #F84320;}
+#shihui div{float: left;
+background-color: #fff;}
+#shihui-s div,#shihui-x div{width: 202px;
+border:1px solid black;
+border-collapse: collapse;
+border-spacing: 0px;
+height: 120px;
+padding-left: 15px;}
+#shihui div:hover{border-color:#FB6804;}
+#shihui h4{margin:0;}
+#shihui p{margin-bottom: 0px;margin-top:0px;
+font-size: 1.1em;
+font-weight:bold; }
+#shihui a{color:#FC6108;
+border:1px solid #FC6108;
+text-decoration: none;
+padding:3px 10px ;
+border-radius: 15px;}
