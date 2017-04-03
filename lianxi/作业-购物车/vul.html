@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<style>
+		li{background: #A79393;width: 200px;height: 30px;display: none;}
+	</style>
+	<script>
+		$(function(){
+			$ss=$("#ss")
+			$("span").click(function(){
+				if($ss.is(":visible")){
+					alert("没有更多的新闻了")
+					$(this).unbind("click")
+				}
+				else{
+					$("li:hidden:lt(5)").show(3000)
+				}
+			})
+			$("span").trigger("click")
+		})
+	</script>
+</head>
+<body>
+<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+		<li>12</li>
+		<li>13</li>
+		<li>14</li>
+		<li>15</li>
+		<li></li>
+
+		<li id="ss"></li>
+	</ul>
+	<span>more</span>	
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table{background: #000;border-spacing: 1px;}
+		td{background: #fff;width: 100px;line-height: 25px;}
+		p{background: #9E9B9B;display: inline-block;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+			var $shan=$("tr:not(#ss) :nth-child(4)");
+			$("tr:not(:first) :nth-child(4)").click(function(){
+				$(this).parent().detach();// 删除一行
+			})
+			$("tr:last").click(function(){
+				$(this).before("<tr><td></td><td></td><td></td><td>删除</td></tr>")//添加一行
+			})
+			$shan.live("click",function(){
+				$(this).parent().detach();//删除新添加的
+			})//以上是表格的jquery；下面是li的jquery
+			$("span").click(function(){
+				$(this).parent().detach()//删除
+			})
+			$("span").live("click",function(){
+				$(this).parent().detach()//删除新添加的
+			})
+			$("#p1").click(function(){
+				$("li:first").before("<li><a href=''>西瓜</a><span>删除</span></li>")//添加西瓜
+			})
+			$("#p2").click(function(){
+				$("li:last").after("<li><a href=''>冬瓜</a><span>删除</span></li>")//添加冬瓜
+			})
+			$("#p3").click(function(){
+				$("#apple").append("<li><a href=''>南瓜</a><span>删除</span></li>")//添加南瓜
+			})
+			$("#p4").click(function(){
+				var $bl=$(".bl").detach()
+				$("li:first").before($bl)//删除菠萝再添加到最前面	
+			})
+		})
+	</script>
+</head>
+<body>
+	<table>
+		<tr id="ss">
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>操作</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>d</td>
+			<td>s</td>
+			<td>删除</td>
+		</tr>
+		<tr>
+			<td>sa</td>
+			<td>a</td>
+			<td>s</td>
+			<td>删除</td>
+		</tr>
+		<tr>
+			<td>z</td>
+			<td>x</td>
+			<td>v</td>
+			<td>删除</td>
+		</tr>
+		<tr>
+			<td colspan="4" class="new">添加一行</td>
+		</tr>
+	</table>
+	<ul>
+		<li id="apple"><a href="">苹果</a><span>删除</span></li>
+		<li><a href="">橘子</a><span>删除</span></li>
+		<li class="bl"><a href="">菠萝</a><span>删除</span></li>
+	</ul>
+	<p id="p1">添加西瓜到一行且可以删除</p>
+	<p id="p2">添加冬瓜到最后一行且可以删除</p>
+	<p id="p3">添加南瓜到苹果和桔子之间且可以删除</p>
+	<p id="p4">将菠萝移到第一行并保持事件存在</p>
+</body>
+</html>

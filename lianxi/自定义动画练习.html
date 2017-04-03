@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{padding: 0;margin: 0;}
+		div{width: 100px;height: 100px;background: red;position: absolute;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+	$(function(){
+		$("div").hover(function(){
+			$(this).css("background","yellow")
+					.animate({left:"300px"},3000,function(){
+			       	$(this).css("background","#201919")
+			       })
+			       
+			       
+		},function(){
+			$(this).animate({top:"300px"},3000,function(){
+			       	$(this).css("background","#B029DE")
+			       })
+
+		},function(){
+			$(this).animate({top:"0px"},3000,function(){
+			       	$(this).css("background","red")
+			       })
+
+		},function(){
+			$(this)$(this).animate({left:"0px"},3000,function(){
+			       	$(this).css("background","#231A8F")})
+
+	})
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

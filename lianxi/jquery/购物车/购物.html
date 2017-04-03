@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#max{border:1px solid #000;height: 150px;}
+		ul{list-style: none;padding: 0;}
+		.pailie>li>div{width: 300px; border:1px solid #000;height: 100px;padding: 10px;}
+		img,#max li,#shu li{float: left;margin-right:20px;}
+		a{color: #000;text-decoration: none;}
+		#shu li p:first-child{text-decoration:line-through ;margin-top: 0px;}
+		input{width: 50px;}
+		.v-middle{padding-top: 30px;}
+		.v-middle a{font-size: 1.2em;}
+		.hand{cursor: pointer;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+	$(function(){
+				var	$price1=$(".jiage").attr("price")
+			$("#jia").click(function(){ 
+				var $price=$("#zongjia").text()
+					$ge= $("input").val()
+					$one="1"
+					$ges=parseInt($ge)+parseInt($one)
+					$price=parseInt($price)+parseInt($price1);
+				$("input").val($ges)
+				
+				if($ges > "1"){$("#jian").addClass("hand")
+					$("#zongjia").text($price)}
+			})
+			$("#jian").click(function(){
+				var $ge= $("input").val()
+					$one="1"
+					$price=$("#zongjia").text()
+				$ges=parseInt($ge)-parseInt($one)
+				$price=parseInt($price)-parseInt($price1)
+				$("input").val($ges)
+				$("#zongjia").text($price)
+				if($ges<2){$(this).removeClass("hand");
+					$("input").val("1")
+					$("#zongjia").text($price1)}
+				else{$("#jian").addClass("hand")
+			$("#zongjia").text($price)}
+			})
+			
+				
+		
+	})
+	</script>
+</head>
+<body>
+	<div id="max">
+		<ul class="pailie">
+			<li>
+				<div id="wupin"><img src="img/xiao.jpg" alt="" ><a href="#">秋季新款韩版卫衣外套学生宽松套头复古蝙蝠袖原宿风上衣女潮外套</a></div></li>
+			<li>
+				<div id="xinxi"></div></li>
+			<li>
+				<div id="shu">
+					<ul>
+						<li><p>￥132.00</p><span>￥22.00</span><p>卖家促销</p></li>
+						<li><div class="v-middle"><a id="jian">-</a>
+						<input type="text" value="1">
+						<a id="jia" class="hand">+</a></div></li>
+						<li><div class="v-middle">￥<span id="zongjia" price="22" class="jiage">22</span>.00</div></li>
+					</ul> 
+				</div></li>
+			<li>
+				<div id="last"><p><a href="">加入收藏</a></p><p><a href="">删除</a></p></div></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多级菜单 </title>
+	<style>
+		*{margin: 0;padding: 0;font-size: 25px;text-align: center;}
+		#false{width: 100%;background:#31C1E8; }
+		#box{width: 1067px;margin: 50px auto;}
+		#leve1{background-color: #31C1E8;height: 50px;border: 2px solid #0EF662;border-bottom: 2px solid   #0EF662;}
+		#leve1>li{list-style: none;width: 150px;float:left;line-height: 50px;border-left: 2px solid #0EF662; position: relative;cursor: pointer; }
+		#leve1 li:first-child{border-left:  none;}
+		#leve1>li span{display: block;}
+		#leve1>li:hover>span{border-bottom:#31C1E8 2px solid;}
+		.leve2{display: none;background-color: #31C1E8;width: 150px;position:absolute;top: 50px;left:-2px;border:2px solid #0EF662;list-style: none;
+				overflow:hidden;white-space:nowrap;word-break:keep-all;}
+		.leve2 li{border-top:2px solid #0EF662; cursor: pointer;text-align: left;}
+		.leve2 li:first-child{border: none;}
+		.leve2 li:hover{background-color: ; color: red;}
+		.none{display: none;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+ 
+			$('#leve1>li').hover(function(){
+				$(this)
+					.children("ul")
+					.stop(true,true)
+					.slideDown(400)
+					.animate({width:"180px"},400)
+					.parent()
+					.siblings()
+					.children('#leve1>li>span')
+					.siblings()
+					.hide();
+			},function(){
+				$('.leve2').stop(true,true).animate({width:"150px"},400).slideUp(400);
+			})
+
+		})	
+
+	</script>
+</head>
+<body>
+	<div id="false">
+		 <div id="box">
+			<ul id="leve1">
+				<li><span>这是第一个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+				<li><span>这是第二个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+				<li><span>这是第三个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+				<li><span>这是第四个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+				<li><span>这是第四个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+				<li><span>这是第五个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+				<li><span>这是第六个</span>
+					<ul class="leve2">
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+						<li>很多字的第二级</li>
+					</ul>
+				</li>
+			</ul>
+		 </div>
+	</div>
+</body>
+</html>

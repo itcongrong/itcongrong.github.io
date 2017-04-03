@@ -1,0 +1,976 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"selected"
+			],
+			[
+				"sty",
+				"style.css"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"type",
+				"type=text"
+			],
+			[
+				"ch",
+				"checkbox"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"bo",
+				"both"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"le",
+				"legend\tTag"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"v",
+				"v_show"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"price",
+				"price1"
+			],
+			[
+				"pri",
+				"price1"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"bor-top",
+				"border-top-width"
+			],
+			[
+				"fad",
+				"fadeIn"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"leve",
+				"leve1"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"pr",
+				"price2"
+			],
+			[
+				"p",
+				"pointer"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"app",
+				"appendTo"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"flow",
+				"overflow"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"border-",
+				"border-spacing"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"显示",
+				"显示精简品牌"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"b",
+				"body"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"bod",
+				"body"
+			],
+			[
+				"src",
+				"script\tTag"
+			],
+			[
+				"cur",
+				"cur\tcursor: ${pointer};"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"borderr",
+				"border-right"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"fl",
+				"fl\tfloat: ${1:left};"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"m-b",
+				"margin-bottom"
+			],
+			[
+				"bodec",
+				"border-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"borde-s",
+				"border-style"
+			],
+			[
+				"bor-b",
+				"border-bottom-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"border-b",
+				"border-bottom"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"boder-co",
+				"border-color"
+			],
+			[
+				"tea",
+				"text-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"JS",
+				"js"
+			],
+			[
+				"red",
+				"ready"
+			],
+			[
+				"my",
+				"mychar"
+			],
+			[
+				"docu",
+				"document.write"
+			],
+			[
+				"spa",
+				"cellspacing\tAttr"
+			],
+			[
+				"cosp",
+				"border-collapse"
+			],
+			[
+				"bg",
+				"bg+\tbackground: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};"
+			],
+			[
+				"borde",
+				"border-color"
+			],
+			[
+				"yincang",
+				"yincang2"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"border-p",
+				"border-spacing"
+			],
+			[
+				"shihui",
+				"shihui-x"
+			],
+			[
+				"w",
+				"width\tAttr"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"cell",
+				"cellspacing"
+			],
+			[
+				"class",
+				"class\tAttr"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"guanggao",
+				"guanggao"
+			],
+			[
+				"bode",
+				"border-right"
+			],
+			[
+				"boder",
+				"border"
+			],
+			[
+				"bordes",
+				"border-spacing"
+			],
+			[
+				"spaci",
+				"letter-spacing"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"texal",
+				"text-align"
+			],
+			[
+				"backi",
+				"background-image"
+			],
+			[
+				"te-a",
+				"text-align"
+			],
+			[
+				"den",
+				"dlxdheng"
+			],
+			[
+				"zuo",
+				"zuofu"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"sol",
+				"absolute"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"ali",
+				"align\tAttr"
+			],
+			[
+				"whit",
+				"white"
+			],
+			[
+				"zh",
+				"zhongjian"
+			],
+			[
+				"mat",
+				"margin-top"
+			],
+			[
+				"wh",
+				"whith"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"f",
+				"ff5400"
+			],
+			[
+				"lli",
+				"list-style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "jquery/表单验证/表单验证.html",
+			"settings":
+			{
+				"buffer_size": 5039,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package→启用插件"
+			],
+			[
+				"in",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"i",
+				"Package Control: Install Package→安装插件"
+			]
+		],
+		"width": 594.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Administrator/Desktop/练习",
+		"/C/Users/Administrator/Desktop/练习/7表单验证",
+		"/C/Users/Administrator/Desktop/练习/jquery",
+		"/C/Users/Administrator/Desktop/练习/jquery/图片轮播",
+		"/C/Users/Administrator/Desktop/练习/jquery/表单验证"
+	],
+	"file_history":
+	[
+		"/C/Users/Administrator/Desktop/练习/7表单验证/css/style.css",
+		"/C/Users/Administrator/Desktop/练习/第十课/shop.html",
+		"/C/Users/Administrator/Desktop/练习/7表单验证/表单验证.html",
+		"/C/Users/Administrator/Desktop/练习/表单验证.html",
+		"/C/Users/Administrator/Desktop/练习/7表单验证/img/reg3.gif",
+		"/C/Users/Administrator/Desktop/练习/7表单验证/img/reg4.gif",
+		"/C/Users/Administrator/Desktop/练习/第十课/shiyan.html",
+		"/C/Users/Administrator/Desktop/练习/xinwen.html",
+		"/C/Users/Administrator/Desktop/练习/jquery/图片轮播/图片轮播.html",
+		"/C/Users/Administrator/Desktop/练习/第十课/shiyan.css",
+		"/C/Users/Administrator/Desktop/练习/4复选框全反选.html",
+		"/C/Users/Administrator/Desktop/练习/3文本框内容滚动.html",
+		"/C/Users/Administrator/Desktop/练习/2文本框高度变化.html",
+		"/C/Users/Administrator/Desktop/练习/1文本框失去焦点.html",
+		"/C/Users/Administrator/Desktop/练习/jiaoben4354/index.html",
+		"/C/Users/Administrator/Desktop/练习/jquery/折叠菜单/折叠菜单.html",
+		"/C/Users/Administrator/Desktop/练习/demo.html",
+		"/C/Users/Administrator/Desktop/练习/img/图片轮播.html",
+		"/C/Users/Administrator/Desktop/练习/作业-购物车/gouwu.html",
+		"/C/Users/Administrator/Desktop/练习/jquery/新建文件夹/多级菜单.html",
+		"/C/Users/Administrator/Desktop/练习/自定义动画练习.html",
+		"/C/Users/Administrator/Desktop/练习/作业-购物车/折叠菜单.html",
+		"/C/Users/Administrator/Desktop/demo.html",
+		"/C/Users/Administrator/Desktop/练习/作业-购物车/demo.html",
+		"/C/Users/Administrator/Documents/Tencent Files/2325602141/FileRecv/素材/素材/img/zy12(图片轮播).html",
+		"/C/Users/Administrator/Desktop/练习/作业-购物车/vul.html",
+		"/C/Users/Administrator/Desktop/练习/导航条.html",
+		"/C/Users/Administrator/Desktop/menu_02/css/default.css",
+		"/C/Users/Administrator/Desktop/menu_02/index.html",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Packages/ColorPicker-master/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/Desktop/练习/作业-购物车/导航条.html",
+		"/C/Users/Administrator/Documents/Tencent Files/2325602141/FileRecv/购物车/购物车/demo.html",
+		"/C/Users/Administrator/Desktop/练习/dom.html",
+		"/C/Users/Administrator/Desktop/练习/lianxi.html",
+		"/C/Users/Administrator/Desktop/第四课/index.html",
+		"/C/Users/Administrator/Desktop/jquery.js",
+		"/C/Users/Administrator/Desktop/练习/选项卡1.html",
+		"/C/Users/Administrator/Desktop/练习/选择器.html",
+		"/C/Users/Administrator/Desktop/练习/99表.html",
+		"/C/Users/Administrator/Desktop/第四课/css/default.css",
+		"/C/Users/Administrator/Desktop/选择器.html",
+		"/C/Users/Administrator/Desktop/jquery/新建文件夹/多级菜单.html",
+		"/C/Users/Administrator/Desktop/jquery/新建文件夹/lianxi.html",
+		"/D/从容/暂时/lianxi.html",
+		"/C/Users/Administrator/Desktop/多级菜单.html",
+		"/C/Users/Administrator/Desktop/练习/多级菜单.heml",
+		"/C/Users/Administrator/Desktop/从容/jqurey.html",
+		"/C/Users/Administrator/Desktop/练习/xuanxiangka.html",
+		"/C/Users/Administrator/Desktop/练习/选项卡4.html",
+		"/C/Users/Administrator/Desktop/练习/选项卡3.html",
+		"/C/Users/Administrator/Desktop/练习/选项卡2.html",
+		"/C/Users/Administrator/Desktop/选项卡.html",
+		"/C/Users/Administrator/Desktop/lianxi3.html",
+		"/C/Users/Administrator/Desktop/从容/3-3.css",
+		"/C/Users/Administrator/Desktop/lianxi2.html",
+		"/C/Users/Administrator/Desktop/从容/河北大学.html",
+		"/C/Users/Administrator/Desktop/ifeng/凤凰.html",
+		"/D/新建文件夹3/github离线版_3_0_5_2/itcongrong.github.io/html/taobao.html",
+		"/D/新建文件夹3/github离线版_3_0_5_2/itcongrong.github.io/css/dier.css",
+		"/C/Users/Administrator/Desktop/黄从容.html",
+		"/D/新建文件夹3/github离线版_3_0_5_2/itcongrong.github.io/css/xiabufen.css",
+		"/D/新建文件夹3/github离线版_3_0_5_2/itcongrong.github.io/css/main.css",
+		"/D/新建文件夹3/github离线版_3_0_5_2/itcongrong.github.io/css/shucaidan.css",
+		"/D/新建文件夹3/github离线版_3_0_5_2/itcongrong.github.io/html/taobao",
+		"/D/从 容/html/taobao.html",
+		"/D/从 容/css/xiabufen.css",
+		"/D/从 容/css/main.css",
+		"/D/从 容/css/dier.css",
+		"/D/从 容/html/diyi.html",
+		"/D/从 容/css/diyi.css",
+		"/D/从 容/css/shucaidan.css",
+		"/D/从 容/css/main-max.css",
+		"/D/从 容/html/SpryAssets/SpryMenuBarVertical.css",
+		"/D/从 容/js/diyi.js",
+		"/D/从容/div+css/css/lianxi1.css",
+		"/D/从容/div+css/html/lianxi1.html",
+		"/D/从容/div+css/html/练习.html",
+		"/D/从 容/html/SpryAssets/SpryMenuBarHorizontal.css",
+		"/C/Users/Administrator/Documents/Tencent Files/2325602141/FileRecv/cssnav20160329/index.html",
+		"/D/从 容/html/testhide.html",
+		"/D/从容/div+css/html/作业1.html",
+		"/D/从容/div+css/css/作业1.css",
+		"/D/从容/div+css/css/exercise3.css",
+		"/D/从容/div+css/html/相对定位.html",
+		"/D/从容/div+css/css/exercise1.css",
+		"/D/从容/div+css/html/导航条.html",
+		"/D/从容/div+css/css/exercise4.css",
+		"/D/从容/div+css/html/背景.html",
+		"/D/从容/div+css/images/dian.png",
+		"/D/从容/div+css/images/def.jpeg",
+		"/D/从容/div+css/images/colortable.gif",
+		"/D/从容/div+css/images/abc.jpg",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/ColorPicker/Default (Windows).sublime-keymap",
+		"/D/从容/div+css/css/exercise2.css",
+		"/D/从容/div+css/html/标签样式练习.html",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/ColorPicker/Default (OSX).sublime-keymap",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/User/ColorPicker.sublime-settings",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/ColorPicker/ColorPicker.sublime-commands",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Packages/emmet-sublime-master/editor.js",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/User/Preferences.sublime-settings",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/从容/div+css/练习.html",
+		"/D/从容/div+css/subject",
+		"/D/从容/练习/diyige.html",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/Emmet/emmet/python-wrapper.js",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/Emmet/emmet/emmet-app.js",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/User/Emmet.sublime-settings",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/Emmet/Emmet.sublime-settings",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/Emmet/editor.js",
+		"/D/从容/SublimeText3_ha/Sublime Text 3.3126x64/Data/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"li",
+			"checkbox",
+			"cc",
+			"span",
+			"></",
+			"\t\t\t\n",
+			"\")})",
+			"page_count",
+			"len",
+			"v_width",
+			"这是第二级",
+			": ",
+			")\n",
+			"fadeOut",
+			"answer",
+			".js",
+			"style_",
+			"answer",
+			"span",
+			"user",
+			"\t\t\t<p>李宁运动</p>\n\t\t\t<p>价格:150元</p>\n\t\t\t<p><span>加入选购</span></p>",
+			"tr",
+			".icon",
+			"\");",
+			"1000px",
+			"'/'",
+			"</a>",
+			"<span>",
+			"leve2",
+			"lie",
+			"dq",
+			"yin",
+			"<span>",
+			"</li>",
+			"</span>",
+			"</a>",
+			"<a href=\"\">",
+			"scope",
+			"td",
+			"</span></div>",
+			"youlike",
+			"waida",
+			"dade",
+			"src=\"\"",
+			"</h4>",
+			"<h4>",
+			"<img",
+			"height=\"120\"",
+			".blocks-thumb4 .blocks-contain a",
+			"blocks-thumb3 .blocks-contain a, .blocks-thumb4 .blocks-contain a",
+			"thumb4-img3",
+			";",
+			"blocks-bd",
+			"td ",
+			"border=\"1\"",
+			"rowspan=\"2\"",
+			"href=\"",
+			"=",
+			"middle-right",
+			"}",
+			"智能",
+			"/a>",
+			"\"4\">",
+			"04",
+			"https://s.taobao.com/list?&amp;q=",
+			"}",
+			"热门TOP",
+			"taobao.com",
+			"href",
+			"a href",
+			"J_Like",
+			"like J_Like",
+			"}",
+			"guanggao",
+			"57",
+			":ho",
+			"text",
+			"MenuBarItemSubmenu",
+			"#main-top",
+			"ol",
+			"ul",
+			"table",
+			"Box",
+			"box",
+			"Box",
+			"box",
+			"Box",
+			"box",
+			"Box",
+			"box",
+			"left",
+			"main-zhong",
+			"box",
+			"Box",
+			"box",
+			"Box",
+			"main-zhong",
+			"<>",
+			"box",
+			"<>",
+			" \n",
+			";}\n",
+			"box",
+			"<>",
+			"<a href=\"#\"><div></div></a>",
+			"无标题项目",
+			"max",
+			"2px",
+			"hidden",
+			"getElement",
+			"#3c3c3c",
+			"white",
+			"#FFF",
+			"#33C",
+			"inline",
+			"70",
+			"35",
+			"300px",
+			"th",
+			"}\n",
+			";\n",
+			"</a>",
+			";}\n",
+			"span",
+			"<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title>练习</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/exercise2.css\">\n</head>\n<body>\n\t<div><a href=\"#\"><span>HTML</span> 教程</a></div>\n\t<div>在W3School 测试你的 <span>HTML 技能! 开始<span>HTML 测验!HTML 参考手册 在W3School,我们提供完整的 HTML 参考手册,其中包括标签、属性、颜色、实体等等。 HTML 4.01 参考...</div>\n\t<div>www.w3school.com.cn/html/  - 百度快照 - 594条评价</div>\n</body>\n</html>",
+			"html",
+			"HTML",
+			"title"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "jquery/表单验证/表单验证.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								690,
+								690
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "lianxi.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

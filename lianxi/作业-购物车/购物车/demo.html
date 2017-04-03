@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;font-family: yahei;}
+		li{float: left;margin-right: 20px;border:1px solid #000;list-style: none;}
+		span{color: red;}
+		ul p span{cursor: pointer;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+			var $price=0;
+			$("ul p span").click(function(){
+				 $(this).parent()
+						.parent()
+						.clone()
+						.appendTo(".car")
+						.find("p span")
+						.text("取消选购")
+						.addClass("delete")
+				var $geshu=$("ul.car li").length;
+				var $price1=$(this).attr("price");
+				$price = $price+parseInt($price1);
+				if($geshu>0){
+					$(".tishi").text("")
+				}
+				else{
+					$(".tishi").text("您当前没有选购商品")
+				}
+				$(".sum").text($geshu)
+				$(".sum2").text($price)
+			})
+			$(".delete").live("click",function(){
+				$(this).parent().parent().detach()
+				var $geshu=$("ul.car li").length;
+				var $price2=$(this).attr("price");
+				$price = $price-parseInt($price2);
+				if($geshu>0){
+					$(".tishi").text("")
+				}
+				else{ 
+					$(".tishi").text("您当前没有选购商品")
+				} 
+				$(".sum").text($geshu) 
+				$(".sum2").text($price)
+			})
+                               
+		})
+
+	</script>
+</head>
+<body>
+	<div>
+	<h4>===商品列表===</h4>
+		<ul class="lie">
+			<li><img src="img/green_two.jpg" alt="">
+			<p>长袖衬衫</p>
+			<p>价格:70元</p>
+			<p><span price="70">加入选购</span></p></li>
+			<li><img src="img/green_two_02.jpg" alt="">
+			<p>耐克运动</p> 
+			<p>价格:170元</p>
+			<p><span price="170">加入选购</span></p></li>       
+			<li><img src="img/green_two_03.jpg" alt="">
+			<p>李宁运动</p>
+			<p>价格:150元</p>
+			<p><span price="150">加入选购</span></p></li>
+		</ul>
+		
+	</div>
+	<div style="clear:both"></div>
+	<div class="bottom">
+	<h4>===已选购商品===</h4>
+	<ul class="car"></ul>
+	<div style="clear:both"></div>
+	<p class="tishi">您当前没有选购商品</p>
+	<p>购物信息:您累计选购<span class="sum">0</span>件商品，共计￥<span class="sum2">0</span>元</p>
+	</div>
+
+</body>
+</html>
+  

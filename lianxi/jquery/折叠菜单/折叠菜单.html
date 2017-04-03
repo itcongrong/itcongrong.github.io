@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>折叠菜单</title>
+	<style>		
+		body{margin:0;padding:0;font-size:20px;font-family:"\5b8b\4f53","Arial Narrow";background:#fff;text-align: center;}
+		ul{list-style: none;}
+		.leve1{width: 200px;background:#EBF3F8;color: #5893B7;border: 1px solid #C4D5DF;cursor:pointer ;}
+		.leve1 span{display:block;}
+		.ul2{ display: none;background:#ffffff;color: #42556B;padding: 0;font-size: 0.9em;}
+		.leve2:hover{background:#1A89C5;color: #4BD6E1;}
+		div{position: absolute;left:50%;margin-left: -200px;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+
+			$(function(){
+				
+				$(".leve1 span").toggle(function(){	
+					$(this).children().text("-").parent().next().slideDown(600)
+				},function(){
+					$(this).children().text("+").parent().next().slideUp(600)
+				})
+				$(".leve1:first span").trigger("click")
+			})
+	</script>
+
+</head>
+<body>
+	<div>
+	<ul>
+		<li class="leve1"> <span>一级菜单<a>+</a></span> 
+			<ul class="ul2">
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+			</ul>
+		</li>
+		<li class="leve1"> <span>一级菜单<a>+</a> </span> 
+			<ul class="ul2">
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+			</ul>
+		</li>
+		<li class="leve1"> <span>一级菜单<a>+</a></span>  
+			<ul class="ul2">
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+				<li class="leve2">二级菜单</li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

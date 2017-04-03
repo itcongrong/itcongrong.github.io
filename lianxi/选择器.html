@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<style>
+		*{margin: 0;padding: 0;}
+		#box{width: 600px;border: 1px solid #000;margin: 50px auto;text-align: center;position: relative;}
+		li{list-style: none;float: left;width: 200px;}
+		a{color: #000;}
+		span{clear: both;border: 2px solid #000;display: inline-block;width: 100px;margin-top: 50px;cursor: pointer;}
+	</style>
+	<script>
+		$(function(){
+			$("body").ready(function(){
+				$("li:gt(7):not(#last)").hide();
+			})
+			$("span")(function(){
+				if ("span=显示全部品牌")
+					{$("li:gt(7)").show();
+				$("span").text("显示精简品牌");}
+			})
+			 else {$(this).click(function(){
+			 	$("li:gt(7):not(#last)").hide();
+			 })}
+		})
+	</script>
+</head>
+<body>
+	<div id="box">
+		<ul>
+			<li><a href="">佳能</a><i>(2010)</i></li> 
+			<li><a href="">索尼</a><i>(38920)</i></li>
+			<li><a href="">三星</a><i>(2310)</i></li>
+			<li><a href="">尼康</a><i>(5460)</i></li>
+			<li><a href="">松下</a><i>(5210)</i></li>
+			<li><a href="">卡西欧</a><i>(3240)</i></li>
+			<li><a href="">富士</a><i>(650)</i></li>  
+			<li><a href="">柯达</a><i>(5460)</i></li>
+			<li><a href="">宾得</a><i>(3250)</i></li>
+			<li><a href="">理光</a><i>(4780)</i></li>
+			<li><a href="">奥林巴斯</a><i>(4608)</i></li>
+			<li><a href="">明基</a><i>(5610)</i></li>
+			<li><a href="">三洋</a><i>(68410)</i></li>
+			<li><a href="">尼克</a><i>(68410)</i></li>
+			<li><a href="">拍得丽</a><i>(68410)</i></li>
+			<li><a href="">广博</a><i>(68410)</i></li>
+			<li><a href="">爱国者</a><i>(68410)</i></li>
+			<li id="last"><a href="">其他品牌相机</a><i>(7275)</i></li>
+		</ul>
+		<span>显示全部品牌</span>
+	</div>
+
+</body>
+</html>         

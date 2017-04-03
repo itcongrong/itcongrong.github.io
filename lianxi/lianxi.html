@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{width: 520px;height: 565px;position: relative;left: 50%;top: 50%;margin-top:250px;margin-left: -250px;border: 1px solid #000;overflow: hidden;}
+		span{display: inline-block;width: 50px;height: 50px;background: #8F4D4D;margin: 1px;}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+			for(i=1;i<10;i++){
+				document.write("*")
+				for(x=1;x<i;x++){
+					document.write("*")
+				}
+				document.write("<br>")
+			}
+						
+		})
+		$(function(){
+			for(i=8;i>0;i--){ 
+				document.write("*")
+				for(x=1;x<i;x++){
+					document.write("*")
+				}
+				document.write("<br>")
+			}
+						
+		})
+	</script>
+</head>
+<body>
+<div id="ss"></div>
+</body>
+</html>

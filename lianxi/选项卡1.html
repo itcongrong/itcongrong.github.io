@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡</title>
+	<style>
+		*{margin: 0px;padding: 0px;font-size: 25px;color: #fff;text-align: center;}
+		.box>ul>li{background: red;}
+		.now{color:#000;background-color: #fff;border-bottom: 2px solid #fff;}
+		.box{display: block;width: 1000px;height:550px;margin: 50px auto;border-width: 2px 2px 2px 2px;border-style: solid; border-color: #660707;position: relative;overflow-y: hidden;}
+		#tab{height: 38px;border-bottom: 2px solid #660707;}
+		.box li{float: left;list-style: none; width:197px; border-right: 2px solid #660707;}
+		.box li a{text-decoration: none;display: block;height: 38px; cursor: pointer;}
+		.box li a:hover{color:#000;background-color: #fff;border-bottom: 2px solid #fff;}
+		img{position: absolute;left: 20px;top: 50px;}
+		.no(display: none;)
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		$(function(){
+			$('#tab a').hover(function(){
+				$(this).addClass("now")
+				.siblings('img')
+				.show()
+				.parent()
+				.siblings()
+				.children('a')
+				.removeClass("now")
+				.siblings('img')
+				.hide();
+			}) 
+		})
+
+
+	</script>
+
+</head>
+<body>
+	<div class="box">
+			<ul id="tab">
+				<li ><a class="now">本站首页</a><img src="shouye.png" alt=""></li>
+				<li><a>新闻头条</a><img src="toutiao.png" alt="" class="no"></li>
+				<li><a>娱乐新闻</a><img src="yule.png" alt="" class="no"></li>
+				<li><a>军事新闻</a><img src="junshi.png" alt="" class="no"></li>
+			</ul>
+			
+	</div>
+		
+</body>
+</html>
